@@ -23,12 +23,17 @@ public class MainActivity extends AppCompatActivity {
         idRecyclerView = findViewById(R.id.idListadesenhos);
         listaDesenhos = new ArrayList<>();
 
+        //criando classe adaptadora e passando os parâmetros
         MyAdapter adapter = new MyAdapter(getApplicationContext(),listaDesenhos);
+
+        //tipos de layout de a lista irá seguir
         idRecyclerView.setLayoutManager(new
                 GridLayoutManager(
                         getApplicationContext(),2));
 
+        //fixador de tamanho de lista - deixar a lista mais rápida
         idRecyclerView.setHasFixedSize(true);
+        //Ligar o recycleview ao adaptador
         idRecyclerView.setAdapter(adapter);
     }
 
