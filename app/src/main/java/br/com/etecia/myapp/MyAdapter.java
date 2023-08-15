@@ -1,6 +1,7 @@
 package br.com.etecia.myapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,6 +46,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         holder.idTituloDesenhos.setText(lstDesenhos.get(position).getTitulo());
         holder.idImagemDesenhos.setImageResource(lstDesenhos.get(position).getImagem());
+    }
+
+    public void onClick (View v) {
+
+        Intent intent = new Intent(mContexto, ApresentaDesenhoActivity.class);
+
+        intent.putExtra("Nome da Jogadora", lstDesenhos.get(position).getTitulo());
+        intent.putExtra("Titulos", lstDesenhos.get(position).getDescricao());
+        intent.putExtra("Times", lstDesenhos.get(position).getCategoria());
+        intent.putExtra("Posição", lstDesenhos.get(position).getImagem());
+
+        mContexto.startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+
+
     }
 
     @Override
