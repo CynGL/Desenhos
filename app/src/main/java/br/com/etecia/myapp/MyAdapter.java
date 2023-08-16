@@ -44,18 +44,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        holder.idTituloDesenhos.setText(lstDesenhos.get(position).getTitulo());
-        holder.idImagemDesenhos.setImageResource(lstDesenhos.get(position).getImagem());
+        holder.idTituloDesenhos.setText(lstJogadoras.get(position).getTitulo());
+        holder.idImagemDesenhos.setImageResource(lstJogadoras.get(position).getImagem());
     }
 
     public void onClick (View v) {
 
         Intent intent = new Intent(mContexto, ApresentaDesenhoActivity.class);
 
-        intent.putExtra("Nome da Jogadora", lstDesenhos.get(position).getTitulo());
-        intent.putExtra("Titulos", lstDesenhos.get(position).getDescricao());
-        intent.putExtra("Times", lstDesenhos.get(position).getCategoria());
-        intent.putExtra("Posição", lstDesenhos.get(position).getImagem());
+        intent.putExtra("Nome da Jogadora", lstJogadoras.get(position).getTitulo());
+        intent.putExtra("Titulos", lstJogadoras.get(position).getDescricao());
+        intent.putExtra("Times", lstJogadoras.get(position).getCategoria());
+        intent.putExtra("Posição", lstJogadoras.get(position).getImagem());
 
         mContexto.startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
 
@@ -73,16 +73,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         ImageView idImagemDesenhos;
 
-        CardView idCardDesenhos;
+        CardView idCardJogadoras;
 
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            idTituloDesenhos = itemView.findViewById(R.id.idTituloDesenhos);
-            idImagemDesenhos = itemView.findViewById(R.id.idImgDesenhos);
-            idCardDesenhos = itemView.findViewById(R.id.idCardDesenhos);
+            idNomeJogadora = itemView.findViewById(R.id.idNomeJogadora);
+            idImagemDesenhos = itemView.findViewById(R.id.idImgJogadoras);
+            idCardJogadoras = itemView.findViewById(R.id.idCardJogadoras);
         }
     }
 
