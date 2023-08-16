@@ -50,7 +50,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     public void onClick (View v) {
 
-        Intent intent = new Intent(mContexto, ApresentaDesenhoActivity.class);
+        Intent intent = new Intent(mContexto, ApresentaSelecaoActivity.class);
 
         intent.putExtra("Nome da Jogadora", lstJogadoras.get(position).getTitulo());
         intent.putExtra("Titulos", lstJogadoras.get(position).getDescricao());
@@ -69,9 +69,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView idTituloDesenhos;
 
-        ImageView idImagemDesenhos;
+        TextView idNomeJogadora;
+
+        ImageView idImagemJogadora;
 
         CardView idCardJogadoras;
 
@@ -81,7 +82,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             super(itemView);
 
             idNomeJogadora = itemView.findViewById(R.id.idNomeJogadora);
-            idImagemDesenhos = itemView.findViewById(R.id.idImgJogadoras);
+            idImagemJogadora = itemView.findViewById(R.id.idImgJogadoras);
             idCardJogadoras = itemView.findViewById(R.id.idCardJogadoras);
         }
     }
