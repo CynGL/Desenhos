@@ -19,12 +19,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private Context mContexto;
 
 
-    private List<Desenhos> lstDesenhos;
+    private List<Desenhos> lstJogadoras;
 
     //criando construtor de classe com parâmetros ( alt + insert e depois shift + seta para baixo)
-    public MyAdapter(Context mContexto, List<Desenhos> lstDesenhos) {
+    public MyAdapter(Context mContexto, List<Desenhos> lstJogadoras) {
         this.mContexto = mContexto;
-        this.lstDesenhos = lstDesenhos;
+        this.lstJogadoras = lstJogadoras;
     }
 
 

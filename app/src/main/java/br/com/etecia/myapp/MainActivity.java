@@ -20,55 +20,151 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        idRecyclerView = findViewById(R.id.idListadesenhos);
+        idRecyclerView = findViewById(R.id.idListaJogadoras);
         listaDesenhos = new ArrayList<>();
 
 
         listaDesenhos.add(
-                new Desenhos("Apocalipse",
+                new Desenhos(
+                        "Leticia",
                         "Filme legal",
                         "ação",
-                        R.drawable.apocalipe));
+                        R.drawable.leticiabr));
 
         listaDesenhos.add(
-                new Desenhos("Desejos",
+                new Desenhos("Adriana",
                         "Filme bom",
                         "drama",
-                        R.drawable.desejos));
+                        R.drawable.adrianabr));
 
         listaDesenhos.add(
-                new Desenhos("2067",
+                new Desenhos("Ana Vitoria",
                         "Filme aa",
                         "ficção",
-                        R.drawable.doismilesessetnaesete));
+                        R.drawable.anavitoriabr));
 
         listaDesenhos.add(
-                new Desenhos("Folha",
+                new Desenhos("Antonia",
                         "Filme natural verde",
                         "drama",
-                        R.drawable.folha));
+                        R.drawable.antoniabr));
 
         listaDesenhos.add(
-                new Desenhos("Interrogação",
+                new Desenhos("Ary Borges",
                         "Filme n",
                         "suspense",
-                        R.drawable.interrogacao));
+                        R.drawable.aryborgesbr));
 
         listaDesenhos.add(
-                new Desenhos("Medo",
+                new Desenhos("Bia Zaneratto",
                         "Filme assustado",
                         "terror",
-                        R.drawable.medo));
+                        R.drawable.biazanerattobr));
         listaDesenhos.add(
-                new Desenhos("Menina",
+                new Desenhos("Bruninha",
                         "Filme feminino",
                         "ação",
-                        R.drawable.menina));
+                        R.drawable.bruninhabr));
         listaDesenhos.add(
-                new Desenhos("Ponta Bala",
+                new Desenhos("Debinha",
                         "Filme doce",
                         "ação",
-                        R.drawable.pontabala));
+                        R.drawable.debinhabr));
+
+        listaDesenhos.add(
+                new Desenhos("Gabi Nunes",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.gabinunesbr));
+
+        listaDesenhos.add(
+                new Desenhos("Geyse",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.geysebr));
+
+
+        listaDesenhos.add(
+                new Desenhos("Julia Bianchi",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.juliabianchibr));
+
+
+        listaDesenhos.add(
+                new Desenhos("Kathellen",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.kathellenbr));
+
+
+        listaDesenhos.add(
+                new Desenhos("Kerolin",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.kerolinbr));
+
+
+        listaDesenhos.add(
+                new Desenhos("Lauren",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.laurenbr));
+
+
+        listaDesenhos.add(
+                new Desenhos("Ludmila",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.ludmilabr));
+
+
+        listaDesenhos.add(
+                new Desenhos("Marta",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.martabr));
+
+
+        listaDesenhos.add(
+                new Desenhos("Nycole",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.nycolebr));
+
+
+        listaDesenhos.add(
+                new Desenhos("Rafaelle",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.rafaellebr));
+
+        listaDesenhos.add(
+                new Desenhos("Tainara",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.tainarabr));
+
+        listaDesenhos.add(
+                new Desenhos("Tamires",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.tamiresbr));
+
+        listaDesenhos.add(
+                new Desenhos("Tarciane",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.tarcianebr));
+
+        listaDesenhos.add(
+                new Desenhos("Yasmim",
+                        "Filme doce",
+                        "ação",
+                        R.drawable.yasmimbr));
+
+
+
 
 
         //criando classe adaptadora e passando os parâmetros

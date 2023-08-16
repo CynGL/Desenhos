@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E38B47"
+    android:background="#E4DBDB"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,15 +13,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="18sp"
-        android:text="Lista de Desenhos"
-        android:textColor="#E8E3E3"
-        android:textSize="30sp"
+        android:text="Lista das jogadoras de futebol"
+        android:textColor="#449847"
+        android:textSize="25sp"
         android:textStyle="bold"
 
         />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/idListadesenhos"
+        android:id="@+id/idListaJogadoras"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

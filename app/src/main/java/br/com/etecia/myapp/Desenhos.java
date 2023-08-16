@@ -1,11 +1,13 @@
 package br.com.etecia.myapp;
 
 public class Desenhos {
-    private String titulo;
+    private String nome;
 
-    private String descricao;
+    private String titulos;
 
-    private String categoria;
+    private String times;
+
+    private String posicao;
 
     private int imagem;
 
@@ -14,37 +16,48 @@ public class Desenhos {
     // para selecionar tudo: shift + tecla pra baixo
 
 
-    public Desenhos(String titulo, String descricao, String categoria, int imagem) {
-        this.titulo = titulo;
-        this.descricao = descricao;
-        this.categoria = categoria;
+    public Desenhos(String nome, String titulos, String times, String posicao, int imagem) {
+        this.nome = nome;
+        this.titulos = titulos;
+        this.times = times;
+        this.posicao = posicao;
         this.imagem = imagem;
     }
 
     //Para selecionar tudo: ALT + INSERT
     //Getter and Setter
-    public String getTitulo() {
-        return titulo;
+
+
+    public String getNome() {
+        return nome;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getTitulos() {
+        return titulos;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setTitulos(String titulos) {
+        this.titulos = titulos;
     }
 
-    public String getCategoria() {
-        return categoria;
+    public String getTimes() {
+        return times;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setTimes(String times) {
+        this.times = times;
+    }
+
+    public String getPosicao() {
+        return posicao;
+    }
+
+    public void setPosicao(String posicao) {
+        this.posicao = posicao;
     }
 
     public int getImagem() {
