@@ -74,6 +74,24 @@
         android:layout_margin="5dp"
         android:gravity="center_horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Titulos: "
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+     android:layout_marginLeft="5sp"
+     android:text="Libertadores (2017 e 2019),
+     Brasileiro (2018, 2020 e 2022), Copa do Brasil (2016)
+     e Paulista (2019 e 2020)."
+     android:textColor="#000"
+     android:textSize="15sp"/>
 
 
 
